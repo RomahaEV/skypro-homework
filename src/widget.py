@@ -1,6 +1,6 @@
 def mask_account_card(data: str) -> str:
     """
-     Функция которая умеет обрабатывать информацию как о картах, так и о счетах.
+    Функция которая умеет обрабатывать информацию как о картах, так и о счетах.
 
     """
     parts = data.split()
@@ -15,7 +15,6 @@ def mask_account_card(data: str) -> str:
     return name + " " + masked_number
 
 
-
 def get_date(data_string: str) -> str:
     """
     которая принимает на вход строку с датой в формате "2024-03-11T02:26:18.671407"
@@ -25,5 +24,3 @@ def get_date(data_string: str) -> str:
     mouth = data_string[5:7]
     year = data_string[0:4]
     return f"{day}.{mouth}.{year}"
-
-
