@@ -16,12 +16,12 @@ def get_mask_card_number(card: str) -> str:
     return " ".join(groups)
 
 
-def get_mask_account(account: str) -> str:
+def get_mask_account(number: str) -> str:
     """Принимает на вход номер счета и возвращает его маску. Номер счета замаскирован и отображается
     в формате **XXXX, где X — это цифра номера. То есть видны только последние 4 цифры номера, а
     перед ними — две звездочки."""
 
-    s = str(account)
-    masked = "**" + s[-4:]
+    check = str(number)
+    masked = "**" + check[-4:]
 
     return masked
