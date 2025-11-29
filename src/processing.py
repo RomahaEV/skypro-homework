@@ -18,3 +18,5 @@ def sort_by_date(data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     sorted_data = sorted(data, key=lambda x: x["date"], reverse=True)
     return sorted_data
+
+# Пробное слияние в PR
