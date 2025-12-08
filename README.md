@@ -81,11 +81,11 @@ sort_by_date(ops)
 + #### Запуск тестов
 ```
 pip install pytest 
-pytest -q
+pytest 
 ```
 + #### Рекомендации:
   + #### Добавьте pytest-cov для анализа покрытия:
 ```
 pip install pytest-cov
-pytest --cov=.
+pytest --cov
 ```
