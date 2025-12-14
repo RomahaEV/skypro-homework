@@ -66,3 +66,16 @@ def raw_strings_for_mask_account_card() -> List[str]:
         "Unknown 123",          # короткий номер
         "NoNumberHere",         # нет числа в конце
     ]
+
+@pytest.fixture
+def transactions():
+    return [
+        {"id": 1, "amount": 100, "currency": "USD", "description": "Оплата"},
+        {"id": 2, "amount": 200, "currency": "EUR", "description": "Перевод"},
+        {"id": 3, "amount": 300, "currency": "USD", "description": "Возврат"},
+    ]
+
+
+@pytest.fixture
+def empty_transactions():
+    return []
